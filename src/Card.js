@@ -1,4 +1,4 @@
-import Card from 'react-bootstrap/Card';
+import { Card, Pagination } from 'react-bootstrap';
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,9 +13,9 @@ class CardComponent extends React.Component {
                 <Card.Img variant="top" src={this.props.urlPhoto} />
                 <Card.Body>
                     <Card.Title>{this.props.name}</Card.Title>
-                    <Card.Text>
-                        {this.props.name}
-                    </Card.Text>
+                    <Card.Text>Tipo: {this.props.type}</Card.Text>
+                    <Card.Text>Altura: {this.props.height}</Card.Text>
+                    <Card.Text>Peso: {this.props.weight}</Card.Text>
                 </Card.Body>
             </Card>
         );
