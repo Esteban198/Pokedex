@@ -1,4 +1,4 @@
-import { Card, Pagination } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,7 +9,7 @@ class CardComponent extends React.Component {
 
     render() {
         return (
-            <Card style={{ width: '18rem' }}>
+            <Card key={this.props.id} style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={this.props.urlPhoto} />
                 <Card.Body>
                     <Card.Title>{this.props.name}</Card.Title>
